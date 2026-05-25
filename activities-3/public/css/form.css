@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #302b63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea, 0 0 60px #00ffea;
+}
+
+h1 {
+    text-align: center;
+    color: #00ffea;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #00ffea;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    background: rgba(0, 255, 234, 0.1); /* semi-transparent neon background */
+    color: #1fdff8;
+    outline: none;
+    appearance: none;       /* Remove default dropdown arrow for modern look */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Optional: add custom arrow for select */
+select {
+    background-image: linear-gradient(45deg, transparent 50%, #00ffea 50%), 
+                      linear-gradient(135deg, #00ffea 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 30px; /* space for arrow */
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #00ffea;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00d4b8;
+}
+
+.errors {
+    background: rgba(222, 220, 249, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: #ff4b5c;
+    font-size: 0.9em;
+}
+
+.success {
+    background: rgba(0, 255, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #00ffea;
+}
